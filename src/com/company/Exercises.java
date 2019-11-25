@@ -16,9 +16,28 @@ public class Exercises {
         }
         return a;
     }
+    public static int sumDigits(int n){
+        int total=0;
+        int d=0;
+        while (n>0){
+            d = n%10;
+            n = n/10;
+            total = total + d;
+        }
+        return total;
+    }
+    public static void sillyNumbers(){
+        
+    }
     public static void main (String [] args){
         System.out.println(addOdds(9));
+        System.out.println(addOdds(10));
+        System.out.println(addOdds(25));
         System.out.println(howManyYears(111.2, 120));
+        System.out.println(howManyYears(111.2, 150));
+        System.out.println(sumDigits(420));
+        System.out.println(sumDigits(69));
+        System.out.println(sumDigits(99999969));
     }
 
 }
