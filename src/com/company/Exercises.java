@@ -27,8 +27,43 @@ public class Exercises {
         return total;
     }
     public static void sillyNumbers(){
-        
+        for (int n=1; n<=3; n++) {
+            for (int i = 0; i <= 9; i++) {
+                int a = 1;
+                while (a <= 3) {
+                    System.out.print(i);
+                    a++;
+                }
+            }
+            System.out.println();
+        }
     }
+    public static void sillyNumbers2(){
+        for (int i=1; i<=4; i++){
+            for (int a=9; a>=1; a--){
+                for (int n=1; n<=a; n++){
+                    System.out.print(a);
+                }
+            }
+            System.out.println();
+        }
+    }
+
+    public static void dollarsAndStars() {
+        int b = 0;
+        for (int a = 1; a <= 7; a++) {
+            for (int c = 0; c < b; c++) {
+                System.out.print("*");
+            }
+            b = b + 2;
+            for (int d=7; d<b; d--){
+                System.out
+            }
+            System.out.println();
+        }
+    }
+
+
     public static void main (String [] args){
         System.out.println(addOdds(9));
         System.out.println(addOdds(10));
@@ -38,6 +73,9 @@ public class Exercises {
         System.out.println(sumDigits(420));
         System.out.println(sumDigits(69));
         System.out.println(sumDigits(99999969));
+        sillyNumbers();
+        sillyNumbers2();
+        dollarsAndStars();
     }
 
 }
