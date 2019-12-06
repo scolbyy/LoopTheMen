@@ -79,7 +79,7 @@ public class Exercises {
             System.out.println();
         }
     }
-    
+
     public static void main (String [] args){
         System.out.println(addOdds(9));
         System.out.println(addOdds(10));
